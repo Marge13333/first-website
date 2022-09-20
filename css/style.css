@@ -1,0 +1,304 @@
+body{
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: #A1A4AC;
+    font-weight: 400;
+    background-color: #101010;
+    
+}
+*,
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+/*---------------------------header--------------------------*/
+}
+
+.header{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 60px 0;
+    z-index: 9999;
+}
+
+.header__inner{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+
+.menu__list-link{
+    position: relative;
+
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+text-decoration: none;
+}
+.menu__list-link::after{
+
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 2px;
+    width:0%;
+    background: #FFFFFF;
+    transition: all .3s;
+}
+.menu__list-link:hover::after{
+width:100%;
+}
+
+
+.menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__list-item{
+    position: relative;
+    margin:0 20px;
+    display: flex;
+    align-items: center;
+}
+.menu__list-img{
+    margin-left: 4px;
+    transition: all .3s;
+}
+
+.menu-dropdown{
+    position: absolute;
+    top: 160%;
+    left: -10px;
+    right: -10px;;
+    padding: 0 10px;
+    transition: all .4s;
+   
+
+    list-style: none;
+    background: #21242f;
+
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.menu__list-item:hover .menu-dropdown{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+
+}
+.menu__list-item:hover .menu__list-img{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.menu-dropdown__item{
+    margin: 10px 0;
+}
+.menu-dropdown__link{
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu-dropdown__link::after{
+
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 2px;
+    width:0%;
+    background: #FFFFFF;
+    transition: all .3s;
+}
+.menu-dropdown__link:hover::after{
+width:100%;
+}
+
+
+
+.header__button{
+    margin-left: 20px;
+}
+
+.header__button-link{          
+    padding:10px 30px;
+
+font-weight: 600;
+font-size: 13px;
+line-height: 15px;
+color: #FFFFFF;
+text-decoration: none;
+
+
+background: rgb(255, 0, 0);
+border: 1px solid #ff0000;
+box-shadow: 0px 5px 10px rgba(41, 31, 31, 0.1);
+border-radius: 10px;
+transition: all .3s;
+}
+.header__button-link:hover{
+    color: #ff0000;
+    background: transparent;
+    
+}
+
+.menu__list{
+    list-style: none;
+    display: flex;
+}
+
+
+
+
+/*---------------------------intro--------------------------*/
+.intro__registration{
+    margin-left: 130px;
+    
+}
+
+.intro__registration-link{ 
+    position: relative;         
+    padding:10px 30px;
+
+font-weight: 600;
+font-size: 35px;
+line-height: 15px;
+color: #FFFFFF;
+text-decoration: none;
+
+
+background: rgb(0, 255, 64);
+border: 1px solid #ff0000;
+box-shadow: 0px 5px 10px rgba(41, 31, 31, 0.1);
+border-radius: 10px;
+transition: all .3s;
+}
+.intro__registration-link:hover{
+    color: #FF4D00;
+    background: transparent;
+    
+}
+
+
+
+
+.intro{
+    position: relative;
+    
+
+    
+}
+.intro-consol__img{
+    position: relative;
+    width: 651px;
+    height: 624px;
+    left: 718px;
+    top: 16px;
+    transform: rotate(0deg);
+
+transition: all .5s;
+}
+.intro-consol__img:hover{
+    position: relative;
+
+width: 800px;
+height: 600px;
+left: 700px;
+top: 100px;
+transform: rotate(30deg);
+    
+
+}
+
+/*------*/
+.inner__intro-logo__img{
+    position: absolute;
+width: 604px;
+height: 130px;
+left: 200px;
+top: 360px;
+}
+
+
+.inner__intro-logo-disc{
+    position: absolute;
+width: 402px;
+height: 43px;
+left: 150px;
+top: 250px;
+
+}
+
+
+.inner__intro-ps__img{
+    position: absolute;
+width: 563px;
+height: 549px;
+left: 1300px;
+top: 400px;
+transition: all .5s;
+transform: rotate(0deg);
+
+
+}
+.inner__intro-ps__img:hover{
+    position: absolute;
+width: 708px;
+height: 690px;
+left: 874px;
+top: 315px;
+transform: rotate(30deg);
+}
+
+
+.intro__bg-ellipse{
+    box-sizing: border-box;
+
+position: absolute;
+width: 1000px;
+height: 1000px;
+left: 1100px;
+top: 127px;
+
+    top: 0;
+    bottom: 0;
+    
+    
+
+    
+}
+.intro__bg-ellipse-1{
+    box-sizing: border-box;
+
+position: absolute;
+left: 270px;
+top: -10px;
+
+}
+/*------------everneed-------------*/
